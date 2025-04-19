@@ -19,14 +19,14 @@ body, html {
 
 body::before {
     content: "";
-    position: fixed; /* Changed to fixed to cover viewport */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100vw; /* Explicitly cover full width */
-    height: 100vh; /* Explicitly cover full height */
-    background: linear-gradient(to right, #FFF, #FFC1CC) !important; /* Gradient overlay */
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, #FFF, #FFC1CC) !important;
     opacity: 0.7 !important;
-    z-index: 0; /* Ensure overlay is behind content */
+    z-index: 0;
 }
 
 .logo-container {
@@ -89,7 +89,7 @@ body::before {
     color: #FF1493;
     margin-top: 120px;
     padding: 20px;
-    z-index: 1; /* Ensure content is above overlay */
+    z-index: 1;
 }
 
 .hero h1 {
@@ -726,15 +726,194 @@ body::before {
     object-fit: cover;
 }
 
+/* Media Queries for Responsiveness */
+
+/* Tablets and smaller devices (max-width: 768px) */
 @media (max-width: 768px) {
+    .hero {
+        margin-top: 80px;
+        padding: 15px;
+    }
     .hero h1 {
-        font-size: px;
+        font-size: 36px; /* Fixed missing value */
     }
     .hero p {
         font-size: 16px;
     }
+    .search-bar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .search-bar input {
+        width: 90%;
+        padding: 15px;
+        font-size: 14px;
+    }
+    .search-bar button {
+        padding: 15px 30px;
+        width: 50%;
+    }
+    .collections {
+        padding: 30px 15px;
+    }
+    .carousel {
+        padding: 15px;
+        max-width: 100%;
+    }
+    .carousel-inner {
+        gap: 20px;
+    }
+    .card {
+        width: 300px;
+        height: 400px;
+        padding: 20px;
+    }
+    .card img {
+        height: 200px;
+    }
+    .card h3 {
+        font-size: 20px;
+        margin: 15px 0;
+    }
+    .card p {
+        font-size: 14px;
+    }
+    .carousel-controls {
+        margin-top: 15px;
+    }
+    .carousel-btn {
+        padding: 8px 15px;
+    }
+    .media-section {
+        padding: 30px 15px;
+    }
+    .media-grid {
+        gap: 15px;
+    }
+    .media-item {
+        padding: 15px;
+    }
+    .media-item.video-card {
+        width: 100%;
+        padding: 15px;
+    }
+    .media-item img, .media-item video {
+        max-height: 400px;
+    }
+    .media-item p {
+        font-size: 14px;
+    }
+    .music-player {
+        padding: 40px 15px;
+        max-width: 100%;
+    }
+    .music-player h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .music-track {
+        max-width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .music-track iframe {
+        width: 60px;
+        height: 60px;
+        margin-right: 0;
+    }
+    .music-track p {
+        font-size: 16px;
+        text-align: center;
+    }
+    .music-controls {
+        margin-top: 10px;
+    }
+    .meme-section {
+        padding: 30px 15px;
+    }
+    .meme-grid {
+        gap: 15px;
+    }
+    .meme-item {
+        padding: 15px;
+    }
+    .meme-item img {
+        max-height: 200px;
+    }
+    .meme-item p {
+        font-size: 14px;
+    }
+    .assistance {
+        padding: 30px 15px;
+        margin-top: 30px;
+    }
+    .assistance p {
+        font-size: 16px;
+    }
+    .btn {
+        padding: 12px 25px;
+        font-size: 18px;
+    }
+    .surprise-content {
+        padding: 20px;
+        max-width: 90%;
+    }
+    .surprise-content h3 {
+        font-size: 20px;
+    }
+    .surprise-message {
+        font-size: 14px;
+    }
+    .shake-hint {
+        font-size: 12px;
+    }
+    .close-btn {
+        font-size: 20px;
+    }
+    .about-section {
+        padding: 30px 15px;
+    }
+    .about-section .container {
+        padding: 30px;
+        margin-top: 30px;
+    }
+    .about-section h2 {
+        font-size: 28px;
+    }
+    .about-section p {
+        font-size: 16px;
+    }
+    .footer {
+        margin-top: 30px;
+        padding: 8px;
+    }
+    .footer p {
+        font-size: 14px;
+    }
+    .navbar {
+        padding: 10px 20px;
+    }
+    .navbar nav ul {
+        gap: 15px;
+    }
+    .navbar nav ul li a {
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+    .logo-container {
+        left: 20px;
+    }
+    .logo img {
+        height: 35px;
+    }
     .letters-section {
         padding: 30px 15px;
+    }
+    .letters-section h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
     }
     .special-letters {
         gap: 20px;
@@ -770,32 +949,201 @@ body::before {
     .letter-content p {
         font-size: 14px;
     }
-    .navbar {
-        padding: 10px 20px;
-    }
-    .navbar nav ul li a {
-        font-size: 16px;
-        padding: 6px 10px;
-    }
-    .logo-container {
-        left: 20px;
-    }
 }
 
+/* Phones (max-width: 480px) */
 @media (max-width: 480px) {
+    .hero {
+        margin-top: 70px;
+        padding: 10px;
+    }
     .hero h1 {
         font-size: 28px;
     }
+    .hero p {
+        font-size: 14px;
+    }
+    .search-bar input {
+        width: 95%;
+        padding: 12px;
+        font-size: 12px;
+    }
+    .search-bar button {
+        padding: 12px 25px;
+        width: 60%;
+        font-size: 14px;
+    }
+    .collections {
+        padding: 20px 10px;
+    }
+    .carousel {
+        padding: 10px;
+    }
+    .carousel-inner {
+        gap: 15px;
+    }
+    .card {
+        width: 250px;
+        height: 350px;
+        padding: 15px;
+    }
+    .card img {
+        height: 180px;
+    }
+    .card h3 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    .card p {
+        font-size: 12px;
+    }
+    .carousel-btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+    .media-section {
+        padding: 20px 10px;
+    }
+    .media-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .media-item {
+        padding: 10px;
+    }
+    .media-item.video-card {
+        padding: 10px;
+    }
+    .media-item img, .media-item video {
+        max-height: 300px;
+    }
+    .media-item p {
+        font-size: 12px;
+    }
+    .music-player {
+        padding: 30px 10px;
+    }
+    .music-player h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .music-track {
+        padding: 8px;
+        gap: 8px;
+    }
+    .music-track iframe {
+        width: 50px;
+        height: 50px;
+    }
+    .music-track p {
+        font-size: 14px;
+    }
+    .music-controls button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    .meme-section {
+        padding: 20px 10px;
+    }
+    .meme-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .meme-item {
+        padding: 10px;
+    }
+    .meme-item img {
+        max-height: 180px;
+    }
+    .meme-item p {
+        font-size: 12px;
+    }
+    .assistance {
+        padding: 20px 10px;
+        margin-top: 20px;
+    }
+    .assistance p {
+        font-size: 14px;
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .surprise-content {
+        padding: 15px;
+        max-width: 95%;
+    }
+    .surprise-content h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .surprise-message {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    .shake-hint {
+        font-size: 10px;
+    }
+    .close-btn {
+        font-size: 18px;
+        top: 8px;
+        right: 12px;
+    }
+    .about-section {
+        padding: 20px 10px;
+    }
+    .about-section .container {
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .about-section h2 {
+        font-size: 24px;
+    }
+    .about-section p {
+        font-size: 14px;
+    }
+    .footer {
+        margin-top: 20px;
+        padding: 6px;
+    }
+    .footer p {
+        font-size: 12px;
+    }
+    .navbar {
+        padding: 8px 15px;
+    }
+    .navbar nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-end;
+    }
+    .navbar nav ul li a {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+    .logo-container {
+        left: 15px;
+        top: 8px;
+    }
+    .logo img {
+        height: 30px;
+    }
+    .letters-section {
+        padding: 20px 10px;
+    }
     .letters-section h2 {
-        font-size: 28px;
+        font-size: 24px;
+        margin-bottom: 20px;
     }
     .special-letters {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
     }
     .special-letter-card {
         width: 100%;
         height: 120px;
+        padding: 15px;
     }
     .special-letter-card h3 {
         font-size: 20px;
@@ -803,8 +1151,13 @@ body::before {
     .special-letter-card.open .special-letter-content {
         max-height: 150px;
     }
+    .special-letter-content p {
+        font-size: 12px;
+    }
     .letters-grid {
         grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0 10px;
     }
     .letter-card {
         padding: 10px;
@@ -815,5 +1168,8 @@ body::before {
     }
     .letter-card.open .letter-content {
         max-height: 120px;
+    }
+    .letter-content p {
+        font-size: 12px;
     }
 }
