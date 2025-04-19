@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Gwy!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo" onclick="window.location.href='#home';">
+                <img src="https://img.icons8.com/color/48/000000/birthday-cake.png" alt="Birthday Logo">
+            </div>
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#photos-videos">Photos & Videos</a></li>
+                    <li><a href="letters.html">Letters</a></li>
+                    <li><a href="#music">Music</a></li>
+                    <li><a href="#memes">Memes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>It's Gwy's Day!</h1>
+        <p>A special day for the most important person in my life</p>
+    </section>
+
+    <section class="collections">
+        <h2>About Her</h2>
+        <div class="carousel">
+            <div class="carousel-inner" id="carouselInner">
+                <div class="card">
+                    <img src="videos/meandyou.jpg" alt="our moment">
+                    <h3>Us</h3>   
+                </div>
+                <div class="card">
+                    <img src="videos/puppy.jpg" alt="puppy">
+                    <h3>Cuteness Aggression of Away</h3>   
+                </div>
+                <div class="card">
+                    <img src="videos/smile.jpg" alt="pretty smile">
+                    <h3>I Would die for this girl's smile</h3>  
+                </div>
+                <div class="card">
+                    <img src="videos/pretty.jpg" alt="beach">
+                    <h3>My Peace</h3>    
+                </div>
+                <div class="card">
+                    <img src="videos/smartypants.jpg" alt="smart girl">
+                    <h3>Smarty Pants Girlie</h3> 
+                </div>
+                <div class="card">
+                    <img src="videos/view.jpg" alt="natural beauty">
+                    <h3>What a view <3</h3>
+                </div>
+                <div class="card">
+                    <img src="videos/eepy.jpg" alt="nursing eepy">
+                    <h3>EEPY SN</h3>
+                </div>
+                <div class="card">
+                    <img src="videos/sickaway.jpg" alt="sick away">
+                    <h3>Sick Baby</h3>
+                </div>
+                <div class="card">
+                    <img src="videos/babies.jpg" alt="babies">
+                    <h3>My Babies</h3>
+                </div>
+                <div class="card">
+                    <img src="videos/smol.jpg" alt="smol away">
+                    <h3>smol baby</h3>
+                </div>
+                <div class="card">
+                    <img src="videos/girlie.jpg" alt="smol away">
+                    <h3>My Girl</h3>
+                </div>
+                <div class="card">
+                    <img src="videos/eyes.jpg" alt="flowers">
+                    <h3>Pretty Eyes</h3>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-btn prev">❮</button>
+                <button class="carousel-btn next">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="photos-videos" class="media-section">
+        <h2>Our Precious Moments</h2>
+        <div class="media-grid">
+            <div class="media-item">
+                <img src="videos/cutesies.jpg" alt="surprise flowers">
+                <p>Cutesies</p>
+            </div>
+            <div class="media-item video-card">
+                <video controls>
+                    <source src="videos/cutenamo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Cute Video Of Us!</p>
+            </div>
+            <div class="media-item video-card">
+                <video controls>
+                    <source src="videos/cutevideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Another Cute Video Of Us!</p>
+            </div>
+            <div class="media-item">
+                <img src="videos/ocean.jpg" alt="ocean love">
+                <p>Love is in the ocean.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="music" class="music-player">
+        <h2>Your Birthday Playlist</h2>
+        <div class="music-track" data-video-id="3AKs9EZpkXk">
+            <iframe id="player-3AKs9EZpkXk" src="https://www.youtube.com/embed/3AKs9EZpkXk?enablejsapi=1" 
+                    title="Babalik Sayo" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+            <p>"Babalik Sayo" - My Home</p>
+            <div class="music-controls">
+                <button class="play-btn" data-video-id="3AKs9EZpkXk">▶️</button>
+                <button class="pause-btn" data-video-id="3AKs9EZpkXk">⏸️</button>
+            </div>
+        </div>
+        <div class="music-track" data-video-id="l5NQx0Ze6Mk">
+            <iframe id="player-l5NQx0Ze6Mk" src="https://www.youtube.com/embed/l5NQx0Ze6Mk?enablejsapi=1" 
+                    title="Palagi" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+            <p>"Palagi" - It will always be you</p>
+            <div class="music-controls">
+                <button class="play-btn" data-video-id="l5NQx0Ze6Mk">▶️</button>
+                <button class="pause-btn" data-video-id="l5NQx0Ze6Mk">⏸️</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="memes" class="meme-section">
+        <h2>Memes to Make You Smile</h2>
+        <div class="meme-grid">
+            <div class="meme-item">
+                <img src="https://i.pinimg.com/736x/77/09/67/77096747b31bcf7abfc2aa31f1eeb979.jpg" alt="Cute Meme 1">
+                <p>You’re my favorite person.</p>
+            </div>
+            <div class="meme-item">
+                <img src="https://i.pinimg.com/736x/cb/16/e4/cb16e4f2dd63bc3f35a219ac089c7159.jpg" alt="Funny Meme 2">
+                <p>Me trying to plan your birthday surprise.</p>
+            </div>
+            <div class="meme-item">
+                <img src="https://i.pinimg.com/736x/58/dc/82/58dc829e220d8bd42d9d6ed18fdfa01b.jpg" alt="Cute Meme 3">
+                <p>You + Me = Forever.</p>
+            </div>
+            <div class="meme-item">
+                <img src="https://i.pinimg.com/736x/a3/49/69/a349690a035ac351bc1b0850d5c10650.jpg" alt="Cute Meme 4">
+                <p>Me when no hugs and kisses</p>
+            </div>
+            <div class="meme-item">
+                <img src="https://i.pinimg.com/736x/0b/8b/5d/0b8b5d94a6d2c410c0a9ffd5ad7a73dc.jpg" alt="Cute Meme 5">
+                <p>You when i say no</p>
+            </div>
+            <div class="meme-item">
+                <img src="https://i.pinimg.com/736x/09/24/62/0924620ddf58099d0d396e2ddee5ec31.jpg" alt="Funny Meme 6">
+                <p>When we argue but I still love you.</p>
+            </div>
+            <div class="meme-item">
+                <img src="https://i.pinimg.com/736x/49/2d/2e/492d2e5a1737bd47a4873a7acaeb05e5.jpg" alt="Funny Meme 7">
+                <p>You when.....</p>
+            </div>
+            <div class="meme-item">
+                <img src="https://i.pinimg.com/736x/7e/04/0d/7e040d1f8dceca8126bbeeb94c271aad.jpg" alt="Funny Meme 8">
+                <p>When i give you lambing but you're still mad</p>
+            </div>
+            <div class="meme-item">
+                <img src="https://i.pinimg.com/736x/a0/f4/fc/a0f4fcbea6ca98a0319629f4be58410d.jpg" alt="Funny Meme 9">
+                <p>Your face while your waiting for me to smell your fart</p>
+            </div>
+            <div class="meme-item">
+                <img src="https://i.pinimg.com/736x/22/87/1e/22871e6f828c815b14f9bd5a0abedb32.jpg" alt="Funny Meme 10">
+                <p>You when i say something questionable</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="assistance">
+        <p>Ready for Something Special?</p>
+        <button class="btn" id="surpriseBtn">Surprise</button>
+    </section>
+
+    <div class="surprise-modal" id="surpriseModal">
+        <div class="surprise-content">
+            <button class="close-btn" id="closeBtn">×</button>
+            <h3>Your Birthday Surprise! 🎉</h3>
+            <p class="surprise-message blurred" id="surpriseMessage">
+                My love, I prepared various but simple gifts that u might like for yourself. I hope that you might use all of those for your everyday routines.❤️
+            </p>
+            <p class="shake-hint">Click or shake to reveal!</p>
+        </div>
+    </div>
+
+    <section id="about-us" class="about-section">
+        <div class="container">
+            <h2>To My Dearest Love</h2>
+            <p>Happy Birthday, my love! Today is all about celebrating you — the most incredible, beautiful, and kind-hearted person I know. You light up my world every day, and I’m so grateful for you.</p>
+            <p>This little site is my way of showing you how much you mean to me. Scroll through our memories, enjoy the wishes, and know that you’re the best gift I could ever ask for.</p>
+            <p>Here’s to another year of love, laughter, and adventures together. I love you more than words can say.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Made with ❤️ for Mary Gwyneth Alberca</p>
+    </footer>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+</body>
+</html>
