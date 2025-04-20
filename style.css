@@ -434,6 +434,41 @@ body::before {
     text-align: center;
 }
 
+.special-video-section {
+    padding: 50px 20px;
+    text-align: center;
+    color: #FF1493;
+    z-index: 1;
+    margin-top: 100px;
+}
+
+.special-video-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #FFB6C1, #FF69B4);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.video-container video {
+    width: 100%;
+    max-height: 450px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.video-container p {
+    color: white;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
 .letters-section {
     padding: 50px 20px;
     text-align: center;
@@ -735,7 +770,7 @@ body::before {
         padding: 15px;
     }
     .hero h1 {
-        font-size: 36px; /* Fixed missing value */
+        font-size: 36px;
     }
     .hero p {
         font-size: 16px;
@@ -802,6 +837,23 @@ body::before {
     }
     .media-item p {
         font-size: 14px;
+    }
+    .special-video-section {
+        padding: 30px 15px;
+        margin-top: 80px;
+    }
+    .special-video-section h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .video-container {
+        padding: 15px;
+    }
+    .video-container video {
+        max-height: 350px;
+    }
+    .video-container p {
+        font-size: 16px;
     }
     .music-player {
         padding: 40px 15px;
@@ -1019,6 +1071,23 @@ body::before {
     }
     .media-item p {
         font-size: 12px;
+    }
+    .special-video-section {
+        padding: 20px 10px;
+        margin-top: 70px;
+    }
+    .special-video-section h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .video-container {
+        padding: 10px;
+    }
+    .video-container video {
+        max-height: 250px;
+    }
+    .video-container p {
+        font-size: 14px;
     }
     .music-player {
         padding: 30px 10px;
